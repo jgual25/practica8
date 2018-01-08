@@ -17,7 +17,9 @@ function viewJSON() {
     loadJSON(function(response) {
         /* Aqui l'objecte response representa l'objecte JSON que ens 
            ha retornat el servidor */
+        //creació de la variable str amb la capçalera de cada columna
         var str = "<tr><th>Nom</th><th>Latitud</th><th>Longitud</th><th>Adreça</th><th>Tipus establiment</th><th>Icona</th></tr>";
+        //bucle for que recorre els elements de la funcio JSON el qual escriurà cada un dels elements demanats.
         for (var i=0; i<response.results.length; i++){
 
         str += "<tr><td>"+ response.results[i].name + "</td>"+
@@ -30,6 +32,7 @@ function viewJSON() {
         console.log(str);
 
         document.getElementById("taula").innerHTML = str;
+        //la taula es posa al final perquè englobarà tota la informació dins ella a partir de la varialbe creada al principi.
         
     });
 }
