@@ -1,0 +1,31 @@
+#taula{
+    text-align: center;
+    color: darkblue;
+    display: -webkit-inline-box;
+    border-collapse: collapse;
+    border: solid rgb(8, 23, 151);
+    border-spacing: 15px;
+    border-width:3px;  
+    border-style: ridge;
+    border-radius: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+#titol{
+    color: darkblue;
+}
+#fondo{
+    background-color: azure;
+}
+#boto{
+	background-color: darkblue; 
+	font-size: 15px;
+	color: cornsilk;
+	font-family: "Times New Roman", "Times", Serif;
+    display: block;
+    padding: 7px;
+    margin: 15px;  
+}
+td{
+    border: 1px solid rgb(8, 23, 151);
+}

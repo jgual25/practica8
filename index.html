@@ -1,14 +1,15 @@
 <html>
     <head>
-        <title>
-            Web de restaurants de Palma
-        </title>
+        <title>Resultats consulta a Google Maps</title>
         <script src="readgooglemaps.js"></script>
-        <link link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <body>
-        <label for='dia' class='boto'> Restaurants </label> <br>    
-        <button type='button' value='algoritme' onclick='viewJSON();' class='boto'> Calcular </button> <br>
-        
-        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="estils.css">
+    </head>
+    <body id="fondo">
+        <h1 id="titol">Resultats consulta a Google Maps</h1>
+        <input type="button" id="boto" value="Veure Restaurants" onclick="viewJSON();">
+        <div id="results"><br>
+        <table id="taula"></table>
+        </div>
     </body>
 </html>
